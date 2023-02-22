@@ -54,13 +54,13 @@ function App() {
   return (
     <div>
       <h1>ศรศิษย์ พึ่งไป 6400684 &copy;</h1>
-      <ul>
+      <ol>
         {petPrices.map(pet => (
           <li key={pet.id}>
             {pet.petName} {pet.price}
           </li>
         ))}
-      </ul>
+      </ol>
       <Chart
         options={petChart.options}
         series={petChart.series}
